@@ -1,12 +1,9 @@
+package Pack;
+
 import java.util.Vector;
 
+import lejos.nxt.LCD;
 
-enum Direction {
-    RIGHT,
-    LEFT,
-    FOWARD,
-    BACKWARD
-        }
 
 public class Memoire {
 
@@ -76,6 +73,11 @@ public class Memoire {
                 return "ERROR";
         }
     }
+    
+    public Direction getE(int i){
+        return retour.elementAt(i);
+    }
+
 
 
     private Vector<Direction> raccourci(Vector<Direction> chemin){
